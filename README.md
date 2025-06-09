@@ -16,6 +16,7 @@ El sistema debe estar preparado para la futura incorporación de nuevos cursos a
 
 ```
 ├── Almacenamiento/
+│   └── AWS RDS tables.sql      #Tablas que usa mi base de datos
 │   └── README.md
 ├── Estructura/
 │   ├── Diagrama.png           # Arquitectura general del sistema
