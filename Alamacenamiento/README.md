@@ -25,26 +25,94 @@ Base de datos: institutos_itaca
 Usuario:    admin
 ```
 
-*Nota: La contraseña y detalles sensibles se mantienen fuera del repositorio por seguridad.*
-
 ---
 
 ## 🧩 Estructura de Tablas
 
-Se han diseñado tablas específicas para cada conjunto de datos:
+### `alumnos`
+- anyo
+- NIA
+- curso
+- grupo
+- turno
+- anyo_curso
+- ciclo
+- grado
+- familia
+- id_compuesto (PK)
+- id_compuesto_grupo
 
-- `alumnos`
-- `calificaciones`
-- `modulos`
-- `grupos`
-- `cursos`
-- `horas`
-- `indicadores`
-- `objetivos_paa`
-- `lineas_paa`
-- `procesos`
+### `calificaciones`
+- anyo
+- cod_alumno
+- evaluacion
+- curso
+- modulo
+- nota
+- id_compuesto
+- id_compuesto_modulo
+- id_compuesto_actualizar
 
-Cada tabla ha sido normalizada para facilitar su explotación en herramientas como Power BI.
+### `modulo`
+- anyo
+- codigoModulo (PK)
+- curso
+- nombre_cas
+- horas
+- id_compuesto_modulo
+
+### `grupo`
+- anyo
+- codigoGrupo (PK)
+- nombre
+- turno
+- capacidad
+- id_compuesto_grupo
+
+### `SQ_Trimestral`
+- Curso
+- Indicador
+- Periodicidad
+- Escala
+- Objetivo
+- Valor_T1
+- Valor_T2
+- Valor_T3
+- Cod_SQ
+- proceso_SQ
+
+### `SQ_Anual`
+- Curso
+- Indicador
+- Periodicidad
+- Escala
+- Objetivo
+- Valor_A
+- Cod_SQ
+- proceso_SQ
+
+### `Procesos`
+- Proceso
+- Descripcion
+
+### `PAA`
+- Curso
+- Indicador
+- Periodicidad
+- Escala
+- Objetivo
+- Valor_A
+- Cod_PAA
+- objetivo_PAA
+
+### `Objetivos`
+- Objetivo_PAA
+- Linea
+- Descripcion_Objetivo
+
+### `Lineas`
+- Linea (INT)
+- Descripcion_Linea
 
 ---
 
