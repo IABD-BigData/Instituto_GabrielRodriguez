@@ -79,11 +79,3 @@ Base de datos: institutos_itaca
 - ✔️ Documentación en README
 
 ---
-
-## 📌 Notas Finales
-
-- El proyecto está diseñado para ser **escalable**, integrando fácilmente nuevos cursos académicos.
-- Toda la limpieza se realiza en **NiFi**, lo que facilita la trazabilidad y mantenimiento del flujo ETL.
-- El diseño sigue buenas prácticas de BI y Data Engineering, manteniendo los datos actualizados y preparados para su análisis.
-
----
