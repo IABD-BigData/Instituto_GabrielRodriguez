@@ -35,19 +35,3 @@ Este directorio contiene el informe final desarrollado con Power BI para el aná
 Los datos visualizados en este informe provienen de una base de datos **MySQL alojada en AWS RDS**, cargada mediante Apache NiFi. Power BI está configurado para conectarse directamente mediante la fuente de datos MySQL.
 
 ---
-
-## ✅ Buenas Prácticas
-
-- Tablas y relaciones correctamente normalizadas
-- Transformaciones mínimas dentro de Power BI (la limpieza se realizó en NiFi)
-- Uso de medidas DAX para los KPIs
-- Segmentadores claros para facilitar la exploración de los datos
-
----
-
-## 📝 Notas
-
-- El archivo `.pbix` está preparado para ser actualizado automáticamente cuando se refresquen los datos en la base de datos.
-- Si deseas modificar las visualizaciones, asegúrate de mantener la integridad de los modelos de datos cargados.
-
----
