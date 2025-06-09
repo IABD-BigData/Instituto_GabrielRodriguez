@@ -65,29 +65,12 @@ Puerto: 3306
 ## 🧩 Servicios de Controladores
 
 - **CSVReader**: se encarga de convertir los flujos de texto CSV en registros con esquema.
-- **DBCPConnectionPool**: conecta NiFi con la base de datos RDS para ejecutar sentencias `INSERT`.
+- **DBCPConnectionPool**: conecta NiFi con la base de datos RDS para ejecutar sentencias `UPSERT`.
 
 ---
 
 ## 🧪 Tratamiento de Errores
 
 Todos los procesadores están conectados a flujos alternativos para capturar errores (`failure`) y evitar bloqueos o pérdidas de datos. Además, se activa `backpressure` para evitar sobrecarga de nodos en caso de exceso de datos.
-
----
-
-## ✅ Buenas Prácticas Aplicadas
-
-- Separación lógica de flujos por tipo de dato
-- Carga incremental por módulos
-- Uso de variables y controladores reutilizables
-- Limpieza en NiFi en lugar de Power BI para reducir carga de visualización
-
----
-
-## 📝 Notas
-
-- Es necesario tener instalado el conector JDBC de MySQL (`mysql-connector-j-8.0.31.jar`) en el entorno de NiFi.
-- El esquema debe estar previamente creado en la base de datos `institutos_itaca` para recibir los datos correctamente.
-- Se puede escalar el flujo para más cursos académicos con mínima modificación.
 
 ---
