@@ -18,7 +18,7 @@ Este directorio contiene los documentos y recursos visuales que describen la arq
 
 ### 1. **Fuentes de Datos**
 - CSV exportados desde **ITACA** (Alumnos, Calificaciones, Grupos, Módulos, etc.)
-- CSV generados por el **equipo directivo** (Indicadores, Líneas PAA, Objetivos, Procesos de Calidad)
+- CSV generados por el **equipo directivo** (Indicadores, Líneas PAA, Objetivos, Procesos)
 
 ### 2. **ETL con Apache NiFi**
 - Recoge, transforma y limpia los datos.
