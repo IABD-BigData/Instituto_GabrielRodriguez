@@ -38,11 +38,11 @@ Se han diseñado tablas específicas para cada conjunto de datos:
 - `modulos`
 - `grupos`
 - `cursos`
-- `horas_modulo`
+- `horas`
 - `indicadores`
 - `objetivos_paa`
 - `lineas_paa`
-- `procesos_calidad`
+- `procesos`
 
 Cada tabla ha sido normalizada para facilitar su explotación en herramientas como Power BI.
 
@@ -61,13 +61,5 @@ La conexión se realiza desde NiFi mediante un **DBCPConnectionPool**, configura
 
 Power BI se conecta directamente a esta base de datos utilizando la fuente de datos **MySQL**.  
 Esto permite refrescar los informes dinámicamente cuando los datos son actualizados desde NiFi.
-
----
-
-## ✅ Buenas Prácticas
-
-- Uso de tipos de datos correctos (`VARCHAR`, `INT`, `DATE`, etc.)
-- Índices primarios y claves foráneas definidos donde es necesario
-- Separación clara entre datos académicos e indicadores del sistema de calidad
 
 ---
