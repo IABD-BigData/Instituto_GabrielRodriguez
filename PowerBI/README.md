@@ -6,7 +6,7 @@ Este directorio contiene el informe final desarrollado con Power BI para el aná
 
 ## 📁 Archivos Incluidos
 
-- **instituoGabriel.pbix**  
+- **institutoGabriel.pbix**  
   Archivo principal del cuadro de mando. Contiene todas las visualizaciones, KPIs e informes dinámicos vinculados a los datos procesados.
 
 - **Capturas de pantalla/**  
